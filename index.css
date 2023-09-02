@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(45deg, #6EE7D3, #9261DE);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    padding: 25px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"], input[type="number"] {
+    width: 50%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 7px;
+    border: none;
+    background: white;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+button {
+    display: block; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #6EE7D3, #9261DE);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    margin-right: auto; 
+    margin-left: auto;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+.margin{
+    margin-bottom: 50px;
+}
+h2 {
+    text-align: center;
+    border-bottom: 2px solid #6EE7D3;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+    font-weight: 500;
+    width: 45%;
+}
+
+.button-selected {
+    background: linear-gradient(135deg, #4B79A1, #283E51);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive per dispositivi mobile */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px 10px;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 70%; 
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        width: 100%;
+    }
+}
+
+#listaGiocatori button:hover {
+    background: linear-gradient(135deg, #9261DE, #6EE7D3); /* Invertito i colori per l'effetto hover */
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Aggiunto un po' di ombra per un effetto di elevazione */
+}
+

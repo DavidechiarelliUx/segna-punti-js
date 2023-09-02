@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Giocatori</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="nomeGiocatore" placeholder="Nome giocatore">
+        <button onclick="aggiungiGiocatore()">Aggiungi Giocatore</button>
+        <div class="margin"></div>
+        <div id="listaGiocatori"></div>
+        
+        <input type="number" id="numeroPunti" placeholder="Inserisci Punti...">
+        <button onclick="aggiungiPunti()">Aggiungi Punti al Giocatore Selezionato</button>
+
+        <h2>Lista Giocatori:</h2>
+        <ul id="elencoGiocatori"></ul>
+
+        <button onclick="reset()">Resetta Giocatori</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
